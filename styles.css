@@ -439,6 +439,11 @@ p { margin: 0 0 1rem; }
   }
 }
 
+/* Hide the watermark entirely on mobile to keep the hero clean */
+@media (max-width: 700px) {
+  .hero-bg::before { display: none; }
+}
+
 .hero-inner {
   position: relative;
   z-index: 1;
