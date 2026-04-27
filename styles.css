@@ -404,7 +404,7 @@ p { margin: 0 0 1rem; }
   content: "";
   position: absolute;
   right: -3%;
-  top: 50%;
+  top: 52.5%;
   transform: translateY(-50%);
   width: min(95vh, 920px);
   height: min(95vh, 920px);
@@ -522,7 +522,7 @@ p { margin: 0 0 1rem; }
   position: relative;
   margin: 0;
   width: 100%;
-  max-width: 520px;
+  max-width: 420px;
   border: 1px solid rgba(188, 153, 98, 0.35);
   padding: 0.75rem;
   background: var(--charcoal-2);
@@ -541,7 +541,7 @@ p { margin: 0 0 1rem; }
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 2 / 3;
   object-fit: cover;
 }
 .photo-frame figcaption {
@@ -647,62 +647,30 @@ p { margin: 0 0 1rem; }
   aspect-ratio: 4 / 3;
   position: relative;
   background: var(--charcoal-2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
-.project-image::before {
-  /* Architectural illustration */
-  content: "";
+.project-image img {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.85;
-  transition: transform 600ms ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 600ms ease, filter 600ms ease;
+  filter: brightness(0.9) contrast(1.02);
 }
-.project-card:hover .project-image::before { transform: scale(1.05); }
-
-.project-image[data-project="mesa"]::before {
-  background:
-    radial-gradient(ellipse at 70% 75%, rgba(188, 153, 98, 0.35), transparent 60%),
-    linear-gradient(180deg, #2a2620 0%, #15140f 100%);
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+  filter: brightness(1) contrast(1.05);
 }
-.project-image[data-project="adobe"]::before {
-  background:
-    radial-gradient(ellipse at 30% 80%, rgba(188, 153, 98, 0.25), transparent 55%),
-    linear-gradient(180deg, #3a2a1c 0%, #1a0f06 100%);
-}
-.project-image[data-project="canyon"]::before {
-  background:
-    radial-gradient(ellipse at 50% 70%, rgba(188, 153, 98, 0.3), transparent 60%),
-    linear-gradient(180deg, #2a2218 0%, #14100a 100%);
-}
-.project-image[data-project="rio"]::before {
-  background:
-    radial-gradient(ellipse at 50% 75%, rgba(188, 153, 98, 0.28), transparent 60%),
-    linear-gradient(180deg, #1f1c17 0%, #0d0c09 100%);
-}
-.project-image[data-project="valley"]::before {
-  background:
-    radial-gradient(ellipse at 60% 70%, rgba(188, 153, 98, 0.2), transparent 55%),
-    linear-gradient(180deg, #232924 0%, #0e1410 100%);
-}
-.project-image[data-project="ridge"]::before {
-  background:
-    radial-gradient(ellipse at 40% 75%, rgba(188, 153, 98, 0.22), transparent 55%),
-    linear-gradient(180deg, #2a2622 0%, #14110e 100%);
-}
-
 .project-image::after {
-  /* architectural line drawing overlay */
+  /* Subtle gold tint + bottom shadow so the project tag stays legible */
   content: "";
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(90deg, transparent 49.5%, rgba(188, 153, 98, 0.18) 49.5%, rgba(188, 153, 98, 0.18) 50.5%, transparent 50.5%),
-    linear-gradient(0deg, transparent 79%, rgba(188, 153, 98, 0.25) 79%, rgba(188, 153, 98, 0.25) 80%, transparent 80%);
+  background:
+    linear-gradient(180deg, transparent 55%, rgba(11, 11, 11, 0.55) 100%),
+    linear-gradient(180deg, rgba(188, 153, 98, 0.05), rgba(11, 11, 11, 0.15));
   pointer-events: none;
 }
 
@@ -901,15 +869,8 @@ p { margin: 0 0 1rem; }
 
 .fleet-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
-}
-.fleet-wide { grid-column: 1 / -1; }
-
-@media (max-width: 700px) {
-  .fleet-grid { grid-template-columns: 1fr; }
-  .fleet-wide { grid-column: auto; }
 }
 
 .fleet-card {
@@ -927,11 +888,11 @@ p { margin: 0 0 1rem; }
 .fleet-card img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  aspect-ratio: 16 / 9;
+  height: auto;
 }
-.fleet-wide img { aspect-ratio: 21 / 9; }
+/* Force a consistent banner aspect for the truck so it doesn't dominate vertically.
+   Trailer and sign render at their natural (already wide) aspect ratios. */
+.fleet-truck img { aspect-ratio: 21 / 9; object-fit: cover; object-position: center 40%; }
 
 /* ===== Footer ===== */
 .site-footer {
