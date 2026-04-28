@@ -1,25 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Straight A Builders — premier residential construction across New Mexico. Albuquerque, Rio Rancho, Santa Fe, Española, and Taos." />
+
+  <!-- Primary meta -->
   <title>Straight A Builders — Residential Construction in New Mexico</title>
+  <meta name="description" content="Straight A Builders is a residential general contractor serving Albuquerque, Rio Rancho, Santa Fe, Española, and Taos. Custom homes, additions, whole-home remodels, kitchens & baths, and outdoor living across New Mexico." />
+  <meta name="author" content="Straight A Builders" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0B0B0B" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="geo.region" content="US-NM" />
+  <meta name="geo.placename" content="Albuquerque, New Mexico" />
+  <meta name="keywords" content="residential construction New Mexico, custom home builder Albuquerque, custom homes Santa Fe, home additions Rio Rancho, whole-home remodel Taos, general contractor Española, kitchen renovation Albuquerque, outdoor living New Mexico" />
+  <link rel="canonical" href="https://jsuazo900.github.io/straightabuilders/" />
+
+  <!-- Search Console verification (replace content with token after launch) -->
+  <meta name="google-site-verification" content="TODO_AFTER_LAUNCH" />
+
+  <!-- Icons & manifest -->
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Straight A Builders" />
+  <meta property="og:title" content="Straight A Builders — Residential Construction in New Mexico" />
+  <meta property="og:description" content="Custom homes, additions, and remodels crafted with precision across Albuquerque, Rio Rancho, Santa Fe, Española, and Taos." />
+  <meta property="og:url" content="https://jsuazo900.github.io/straightabuilders/" />
+  <meta property="og:image" content="https://jsuazo900.github.io/straightabuilders/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Straight A Builders — The Highest Grade in Every Build" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Straight A Builders — Residential Construction in New Mexico" />
+  <meta name="twitter:description" content="Custom homes, additions, and remodels across Albuquerque, Rio Rancho, Santa Fe, Española, and Taos." />
+  <meta name="twitter:image" content="https://jsuazo900.github.io/straightabuilders/assets/og-image.png" />
+  <meta name="twitter:image:alt" content="Straight A Builders — The Highest Grade in Every Build" />
+
+  <!-- Performance: preconnect & preload LCP image -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="assets/Straight A Builders Logo-03.png" fetchpriority="high" />
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data — schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["GeneralContractor", "LocalBusiness"],
+        "@id": "https://jsuazo900.github.io/straightabuilders/#business",
+        "name": "Straight A Builders",
+        "alternateName": "Straight A",
+        "slogan": "The Highest Grade in Every Build",
+        "description": "Residential general contractor in New Mexico specializing in custom homes, additions, whole-home remodels, kitchen and bath renovations, and outdoor living across Albuquerque, Rio Rancho, Santa Fe, Española, and Taos.",
+        "url": "https://jsuazo900.github.io/straightabuilders/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://jsuazo900.github.io/straightabuilders/assets/Straight%20A%20Builders%20Logo-02.png",
+          "width": 800,
+          "height": 600
+        },
+        "image": [
+          "https://jsuazo900.github.io/straightabuilders/assets/Truck%20Mockup%201.png",
+          "https://jsuazo900.github.io/straightabuilders/assets/Trailer%20Mockup.png",
+          "https://jsuazo900.github.io/straightabuilders/assets/Construction%20Sign.png"
+        ],
+        "telephone": "TODO_REAL_DATA_PHONE_E164",
+        "email": "TODO_REAL_DATA_EMAIL",
+        "priceRange": "$$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Check, Credit Card, Bank Transfer",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "TODO_REAL_DATA_STREET",
+          "addressLocality": "Albuquerque",
+          "addressRegion": "NM",
+          "postalCode": "TODO_REAL_DATA_ZIP",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 35.0844,
+          "longitude": -106.6504
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        ],
+        "sameAs": [
+          "TODO_REAL_DATA_FACEBOOK_URL",
+          "TODO_REAL_DATA_INSTAGRAM_URL",
+          "TODO_REAL_DATA_GOOGLE_BUSINESS_PROFILE_URL"
+        ],
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "NM Contractor License",
+          "value": "TODO_REAL_DATA_LICENSE_NUMBER"
+        },
+        "foundingDate": "TODO_REAL_DATA_FOUNDING_YEAR",
+        "areaServed": [
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-albuquerque" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-rio-rancho" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-santa-fe" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-espanola" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-taos" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Residential Construction Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@id": "https://jsuazo900.github.io/straightabuilders/#service-custom-homes" } },
+            { "@type": "Offer", "itemOffered": { "@id": "https://jsuazo900.github.io/straightabuilders/#service-additions" } },
+            { "@type": "Offer", "itemOffered": { "@id": "https://jsuazo900.github.io/straightabuilders/#service-remodels" } },
+            { "@type": "Offer", "itemOffered": { "@id": "https://jsuazo900.github.io/straightabuilders/#service-kitchens-baths" } },
+            { "@type": "Offer", "itemOffered": { "@id": "https://jsuazo900.github.io/straightabuilders/#service-outdoor-living" } },
+            { "@type": "Offer", "itemOffered": { "@id": "https://jsuazo900.github.io/straightabuilders/#service-pre-construction" } }
+          ]
+        },
+        "knowsAbout": [
+          "Custom home construction",
+          "Home additions",
+          "Whole-home remodels",
+          "Kitchen and bath renovations",
+          "Outdoor living spaces",
+          "Pre-construction consulting",
+          "New Mexico residential construction"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#website",
+        "url": "https://jsuazo900.github.io/straightabuilders/",
+        "name": "Straight A Builders",
+        "description": "Residential construction across New Mexico.",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://jsuazo900.github.io/straightabuilders/#business" }
+      },
+
+      {
+        "@type": "City",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#place-albuquerque",
+        "name": "Albuquerque",
+        "containedInPlace": { "@type": "State", "name": "New Mexico", "addressCountry": "US" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 35.0844, "longitude": -106.6504 }
+      },
+      {
+        "@type": "City",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#place-rio-rancho",
+        "name": "Rio Rancho",
+        "containedInPlace": { "@type": "State", "name": "New Mexico", "addressCountry": "US" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 35.2328, "longitude": -106.6630 }
+      },
+      {
+        "@type": "City",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#place-santa-fe",
+        "name": "Santa Fe",
+        "containedInPlace": { "@type": "State", "name": "New Mexico", "addressCountry": "US" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 35.6870, "longitude": -105.9378 }
+      },
+      {
+        "@type": "City",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#place-espanola",
+        "name": "Española",
+        "containedInPlace": { "@type": "State", "name": "New Mexico", "addressCountry": "US" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 35.9914, "longitude": -106.0811 }
+      },
+      {
+        "@type": "City",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#place-taos",
+        "name": "Taos",
+        "containedInPlace": { "@type": "State", "name": "New Mexico", "addressCountry": "US" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 36.4072, "longitude": -105.5734 }
+      },
+
+      {
+        "@type": "Service",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#service-custom-homes",
+        "serviceType": "Custom Home Construction",
+        "name": "Custom Homes",
+        "description": "Ground-up residential builds tailored to your land, lifestyle, and budget across New Mexico.",
+        "provider": { "@id": "https://jsuazo900.github.io/straightabuilders/#business" },
+        "areaServed": [
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-albuquerque" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-rio-rancho" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-santa-fe" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-espanola" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-taos" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#service-additions",
+        "serviceType": "Home Addition",
+        "name": "Additions",
+        "description": "Master suites, casitas, second stories, and connected outdoor living spaces.",
+        "provider": { "@id": "https://jsuazo900.github.io/straightabuilders/#business" },
+        "areaServed": [
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-albuquerque" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-rio-rancho" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-santa-fe" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-espanola" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-taos" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#service-remodels",
+        "serviceType": "Whole-Home Remodel",
+        "name": "Whole-Home Remodels",
+        "description": "Down-to-the-studs renovations that bring older New Mexico homes up to modern comfort.",
+        "provider": { "@id": "https://jsuazo900.github.io/straightabuilders/#business" },
+        "areaServed": [
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-albuquerque" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-rio-rancho" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-santa-fe" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-espanola" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-taos" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#service-kitchens-baths",
+        "serviceType": "Kitchen and Bath Renovation",
+        "name": "Kitchens & Baths",
+        "description": "High-craft finish work — custom cabinetry, stone, tile, and fixtures installed right.",
+        "provider": { "@id": "https://jsuazo900.github.io/straightabuilders/#business" },
+        "areaServed": [
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-albuquerque" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-rio-rancho" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-santa-fe" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-espanola" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-taos" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#service-outdoor-living",
+        "serviceType": "Outdoor Living Construction",
+        "name": "Outdoor Living",
+        "description": "Portales, kiva fireplaces, patios, and pergolas designed for high-desert evenings.",
+        "provider": { "@id": "https://jsuazo900.github.io/straightabuilders/#business" },
+        "areaServed": [
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-albuquerque" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-rio-rancho" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-santa-fe" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-espanola" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-taos" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#service-pre-construction",
+        "serviceType": "Pre-Construction Consulting",
+        "name": "Pre-Construction",
+        "description": "Site evaluation, design partnership, permitting, and budgeting before construction begins.",
+        "provider": { "@id": "https://jsuazo900.github.io/straightabuilders/#business" },
+        "areaServed": [
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-albuquerque" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-rio-rancho" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-santa-fe" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-espanola" },
+          { "@id": "https://jsuazo900.github.io/straightabuilders/#place-taos" }
+        ]
+      },
+
+      {
+        "@type": "FAQPage",
+        "@id": "https://jsuazo900.github.io/straightabuilders/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where in New Mexico does Straight A Builders work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We build across central and northern New Mexico — Albuquerque, Rio Rancho, Santa Fe, Española, and Taos — including outlying neighborhoods within each region."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of homes do you build?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We focus on residential general contracting: ground-up custom homes (modern farmhouses, Spanish-style stucco, and estate-scale residences), additions, whole-home remodels, kitchens and baths, and outdoor living spaces."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are you licensed and insured in New Mexico?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Straight A Builders is a licensed and insured general contractor in the state of New Mexico. We carry general liability and workers' compensation coverage on every project."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a custom home take to build in New Mexico?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most custom homes take 9 to 14 months from groundbreaking to move-in, depending on size, finishes, and permitting timelines. Pre-construction (design, budgeting, and permits) typically adds 2 to 4 months before that."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer fixed-bid pricing or only cost-plus?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We offer both. Most clients choose a fixed-bid contract once design and selections are finalized, but we'll structure cost-plus or hybrid arrangements when that fits the project better."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you handle permitting and design coordination?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Our pre-construction service includes site evaluation, partnership with your architect or designer, full permitting through the relevant New Mexico jurisdiction, and detailed budgeting before construction begins."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <!-- Architectural blueprint grid overlay -->
   <div class="blueprint-grid" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="Straight A Builders home">
-        <img src="assets/Straight A Builders Logo-03.png" alt="Straight A Builders" class="brand-logo" />
+        <img src="assets/Straight A Builders Logo-03.png" alt="Straight A Builders — The Highest Grade in Every Build" class="brand-logo" width="9167" height="6251" fetchpriority="high" decoding="async" />
       </a>
 
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -31,11 +357,13 @@
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
         <a href="#locations">Locations</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
+  <main id="main">
   <!-- HERO -->
   <section class="hero">
     <div class="hero-bg" aria-hidden="true"></div>
@@ -72,7 +400,7 @@
       </div>
       <div class="col-visual">
         <figure class="photo-frame">
-          <img src="assets/Tshirt 2.png" alt="Straight A Builders crew on site" />
+          <img src="assets/Tshirt 2.png" alt="A Straight A Builders crew member on a New Mexico construction site wearing the company's branded shirt" width="721" height="1085" loading="lazy" decoding="async" />
           <figcaption>On-site • New Mexico</figcaption>
         </figure>
       </div>
@@ -131,13 +459,13 @@
       </div>
       <div class="fleet-grid">
         <figure class="fleet-card fleet-truck">
-          <img src="assets/Truck Mockup 1.png" alt="Straight A Builders branded crew truck" loading="lazy" />
+          <img src="assets/Truck Mockup 1.png" alt="Straight A Builders branded crew truck parked on a New Mexico jobsite" width="1536" height="1024" loading="lazy" decoding="async" />
         </figure>
         <figure class="fleet-card fleet-trailer">
-          <img src="assets/Trailer Mockup.png" alt="Straight A Builders enclosed jobsite trailer" loading="lazy" />
+          <img src="assets/Trailer Mockup.png" alt="Straight A Builders enclosed jobsite trailer with branded wrap" width="1532" height="438" loading="lazy" decoding="async" />
         </figure>
         <figure class="fleet-card fleet-sign">
-          <img src="assets/Construction Sign.png" alt="Straight A Builders site signage" loading="lazy" />
+          <img src="assets/Construction Sign.png" alt="Straight A Builders site signage on a fenced construction site" width="1397" height="635" loading="lazy" decoding="async" />
         </figure>
       </div>
     </div>
@@ -156,7 +484,7 @@
         <!-- Top row: Custom Homes -->
         <article class="project-card">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1675275698293-09d50d7f224d?w=900&q=80&auto=format&fit=crop" alt="Modern farmhouse with welcoming entry walkway" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1675275698293-09d50d7f224d?w=900&h=675&q=80&auto=format&fit=crop" alt="Modern farmhouse with welcoming entry walkway" width="900" height="675" loading="lazy" decoding="async" />
             <span class="project-tag">Custom Home</span>
           </div>
           <div class="project-body">
@@ -168,7 +496,7 @@
 
         <article class="project-card">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1765759360956-bef2eaf3efdc?w=900&q=80&auto=format&fit=crop" alt="Spanish-style stucco home with clay tile roof" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1765759360956-bef2eaf3efdc?w=900&h=675&q=80&auto=format&fit=crop" alt="Spanish-style stucco home with clay tile roof" width="900" height="675" loading="lazy" decoding="async" />
             <span class="project-tag">Custom Home</span>
           </div>
           <div class="project-body">
@@ -180,7 +508,7 @@
 
         <article class="project-card">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1761135125354-d024f37d04ec?w=900&q=80&auto=format&fit=crop" alt="Mansion-style estate residence with columns" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1761135125354-d024f37d04ec?w=900&h=675&q=80&auto=format&fit=crop" alt="Mansion-style estate residence with columns" width="900" height="675" loading="lazy" decoding="async" />
             <span class="project-tag">Custom Home</span>
           </div>
           <div class="project-body">
@@ -193,7 +521,7 @@
         <!-- Bottom row: Additions & Remodel -->
         <article class="project-card">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1762117361035-5cd4f9c24795?w=900&q=80&auto=format&fit=crop" alt="Detached casita with covered outdoor kitchen and bar" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1762117361035-5cd4f9c24795?w=900&h=675&q=80&auto=format&fit=crop" alt="Detached casita with covered outdoor kitchen and bar" width="900" height="675" loading="lazy" decoding="async" />
             <span class="project-tag">Addition</span>
           </div>
           <div class="project-body">
@@ -205,7 +533,7 @@
 
         <article class="project-card">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1759412393800-0ac06909423a?w=900&q=80&auto=format&fit=crop" alt="Modern sunroom addition attached to home" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1759412393800-0ac06909423a?w=900&h=675&q=80&auto=format&fit=crop" alt="Modern sunroom addition attached to home" width="900" height="675" loading="lazy" decoding="async" />
             <span class="project-tag">Addition</span>
           </div>
           <div class="project-body">
@@ -217,7 +545,7 @@
 
         <article class="project-card">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1639173925921-5d5fd027713c?w=900&q=80&auto=format&fit=crop" alt="Modern kitchen with center island and bar seating" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1639173925921-5d5fd027713c?w=900&h=675&q=80&auto=format&fit=crop" alt="Modern kitchen with center island and bar seating" width="900" height="675" loading="lazy" decoding="async" />
             <span class="project-tag">Kitchen &amp; Bath</span>
           </div>
           <div class="project-body">
@@ -269,12 +597,67 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="section section-dark" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-heading">Frequently asked questions.</h2>
+        <p class="section-sub">Everything to know before we break ground in New Mexico.</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Where in New Mexico does Straight A Builders work?</summary>
+          <div class="faq-answer">
+            <p>We build across central and northern New Mexico — Albuquerque, Rio Rancho, Santa Fe, Española, and Taos — including outlying neighborhoods within each region.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What types of homes do you build?</summary>
+          <div class="faq-answer">
+            <p>We focus on residential general contracting: ground-up custom homes (modern farmhouses, Spanish-style stucco, and estate-scale residences), additions, whole-home remodels, kitchens and baths, and outdoor living spaces.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Are you licensed and insured in New Mexico?</summary>
+          <div class="faq-answer">
+            <p>Yes. Straight A Builders is a licensed and insured general contractor in the state of New Mexico. We carry general liability and workers' compensation coverage on every project.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How long does a custom home take to build in New Mexico?</summary>
+          <div class="faq-answer">
+            <p>Most custom homes take 9 to 14 months from groundbreaking to move-in, depending on size, finishes, and permitting timelines. Pre-construction (design, budgeting, and permits) typically adds 2 to 4 months before that.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do you offer fixed-bid pricing or only cost-plus?</summary>
+          <div class="faq-answer">
+            <p>We offer both. Most clients choose a fixed-bid contract once design and selections are finalized, but we'll structure cost-plus or hybrid arrangements when that fits the project better.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do you handle permitting and design coordination?</summary>
+          <div class="faq-answer">
+            <p>Yes. Our pre-construction service includes site evaluation, partnership with your architect or designer, full permitting through the relevant New Mexico jurisdiction, and detailed budgeting before construction begins.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="container two-col contact-block">
       <div class="col-text">
         <p class="eyebrow">Contact</p>
-        <h2>Start your build.</h2>
+        <h2 id="contact-heading">Start your build.</h2>
         <p>Tell us about your project. We'll respond within one business day to schedule a site visit or design consultation.</p>
 
         <ul class="contact-list">
@@ -297,24 +680,24 @@
         </ul>
       </div>
 
-      <form class="contact-form" onsubmit="return handleSubmit(event)">
+      <form class="contact-form" onsubmit="return handleSubmit(event)" aria-labelledby="contact-heading">
         <div class="form-row">
-          <label>
+          <label for="contact-name">
             <span>Name</span>
-            <input type="text" name="name" required />
+            <input id="contact-name" type="text" name="name" autocomplete="name" required />
           </label>
-          <label>
+          <label for="contact-phone">
             <span>Phone</span>
-            <input type="tel" name="phone" />
+            <input id="contact-phone" type="tel" name="phone" autocomplete="tel" />
           </label>
         </div>
-        <label>
+        <label for="contact-email">
           <span>Email</span>
-          <input type="email" name="email" required />
+          <input id="contact-email" type="email" name="email" autocomplete="email" required />
         </label>
-        <label>
+        <label for="contact-location">
           <span>Location</span>
-          <select name="location" required>
+          <select id="contact-location" name="location" required>
             <option value="">Select a region</option>
             <option>Albuquerque</option>
             <option>Rio Rancho</option>
@@ -324,9 +707,9 @@
             <option>Other / Not sure</option>
           </select>
         </label>
-        <label>
+        <label for="contact-project">
           <span>Project Type</span>
-          <select name="project" required>
+          <select id="contact-project" name="project" required>
             <option value="">Select a project type</option>
             <option>Custom Home</option>
             <option>Addition</option>
@@ -336,26 +719,29 @@
             <option>Pre-Construction Consult</option>
           </select>
         </label>
-        <label>
+        <label for="contact-message">
           <span>Tell us about your project</span>
-          <textarea name="message" rows="5" required></textarea>
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
         </label>
         <button type="submit" class="btn btn-primary">Send Inquiry</button>
-        <p class="form-note" id="form-note" hidden>Thanks — we'll be in touch within one business day.</p>
+        <p class="form-note" id="form-note" role="status" aria-live="polite" hidden>Thanks — we'll be in touch within one business day.</p>
       </form>
     </div>
   </section>
 
+  </main>
+
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="assets/Straight A Builders Logo-02.png" alt="Straight A Builders" class="footer-logo" />
+        <img src="assets/Straight A Builders Logo-02.png" alt="Straight A Builders" class="footer-logo" width="8334" height="6251" loading="lazy" decoding="async" />
       </div>
       <nav class="footer-nav" aria-label="Footer">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
         <a href="#locations">Locations</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
       <p class="footer-meta">© <span id="year"></span> Straight A Builders. Licensed &amp; insured in New Mexico.</p>

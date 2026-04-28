@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Block common crawl traps for static GH Pages site
+Disallow: /.git/
+Disallow: /.github/
+
+Sitemap: https://jsuazo900.github.io/straightabuilders/sitemap.xml

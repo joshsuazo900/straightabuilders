@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://jsuazo900.github.io/straightabuilders/</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://jsuazo900.github.io/straightabuilders/assets/Straight%20A%20Builders%20Logo-02.png</image:loc>
+      <image:title>Straight A Builders</image:title>
+      <image:caption>Straight A Builders — Residential Construction in New Mexico</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jsuazo900.github.io/straightabuilders/assets/Truck%20Mockup%201.png</image:loc>
+      <image:title>Straight A Builders branded crew truck</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jsuazo900.github.io/straightabuilders/assets/Trailer%20Mockup.png</image:loc>
+      <image:title>Straight A Builders enclosed jobsite trailer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jsuazo900.github.io/straightabuilders/assets/Construction%20Sign.png</image:loc>
+      <image:title>Straight A Builders site signage</image:title>
+    </image:image>
+  </url>
+</urlset>

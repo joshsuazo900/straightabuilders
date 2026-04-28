@@ -943,6 +943,91 @@ p { margin: 0 0 1rem; }
   margin: 0;
 }
 
+/* ===== Skip-to-content link (a11y) ===== */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0.75rem 1.25rem;
+  background: var(--gold);
+  color: var(--charcoal);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateY(-150%);
+  transition: transform 200ms ease;
+}
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 2px solid var(--warm-white);
+  outline-offset: 2px;
+}
+
+/* ===== FAQ accordion ===== */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.faq-item {
+  background: var(--charcoal-3);
+  border: 1px solid rgba(188, 153, 98, 0.18);
+  transition: border-color var(--transition);
+}
+.faq-item[open] {
+  border-color: var(--gold);
+}
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--warm-white);
+  user-select: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "";
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  border-right: 1.5px solid var(--gold);
+  border-bottom: 1.5px solid var(--gold);
+  transform: rotate(45deg);
+  transition: transform 200ms ease;
+}
+.faq-item[open] summary::after {
+  transform: rotate(-135deg);
+}
+.faq-item summary:hover { color: var(--gold); }
+.faq-item summary:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: -2px;
+}
+.faq-answer {
+  padding: 0 1.5rem 1.4rem;
+  color: var(--warm-white-dim);
+  font-size: 0.97rem;
+  line-height: 1.65;
+  border-top: 1px solid rgba(188, 153, 98, 0.12);
+  padding-top: 1rem;
+}
+.faq-answer p {
+  margin: 0;
+}
+
 /* ===== Reveal animation ===== */
 .reveal {
   opacity: 0;
