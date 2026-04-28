@@ -8,6 +8,15 @@ window.addEventListener('load', () => {
   window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
 });
 
+// Logo / brand click — smooth-scroll to top instead of navigating.
+const brandLink = document.querySelector('.brand');
+if (brandLink) {
+  brandLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  });
+}
+
 // Mobile nav toggle
 const navToggle = document.querySelector('.nav-toggle');
 const siteNav = document.querySelector('.site-nav');
