@@ -853,6 +853,9 @@ p { margin: 0 0 1rem; }
   text-transform: none;
   font-weight: 500;
 }
+.form-note-error {
+  color: #e57373;
+}
 
 /* ===== Fleet / On the Road ===== */
 .section-brand {

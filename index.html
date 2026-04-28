@@ -76,7 +76,7 @@
           "https://jsuazo900.github.io/straightabuilders/assets/Construction%20Sign.png"
         ],
         "telephone": "TODO_REAL_DATA_PHONE_E164",
-        "email": "TODO_REAL_DATA_EMAIL",
+        "email": "straightabuildersnm@gmail.com",
         "priceRange": "$$$",
         "currenciesAccepted": "USD",
         "paymentAccepted": "Cash, Check, Credit Card, Bank Transfer",
@@ -680,7 +680,9 @@
         </ul>
       </div>
 
-      <form class="contact-form" onsubmit="return handleSubmit(event)" aria-labelledby="contact-heading">
+      <form class="contact-form" action="https://formspree.io/f/maqarbve" method="POST" onsubmit="return handleSubmit(event)" aria-labelledby="contact-heading">
+        <input type="hidden" name="_subject" value="New inquiry — Straight A Builders" />
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
         <div class="form-row">
           <label for="contact-name">
             <span>Name</span>
@@ -725,6 +727,7 @@
         </label>
         <button type="submit" class="btn btn-primary">Send Inquiry</button>
         <p class="form-note" id="form-note" role="status" aria-live="polite" hidden>Thanks — we'll be in touch within one business day.</p>
+        <p class="form-note form-note-error" id="form-error" role="alert" aria-live="assertive" hidden>Something went wrong. Please email straightabuildersnm@gmail.com or try again.</p>
       </form>
     </div>
   </section>

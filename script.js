@@ -41,15 +41,44 @@ revealTargets.forEach((el) => io.observe(el));
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-// Contact form (front-end only — wire to backend later)
-function handleSubmit(event) {
+// Contact form — submits to Formspree via fetch, falls back to native POST without JS.
+async function handleSubmit(event) {
   event.preventDefault();
   const form = event.target;
-  const note = document.getElementById('form-note');
-  if (note) {
-    note.hidden = false;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const successNote = document.getElementById('form-note');
+  const errorNote = document.getElementById('form-error');
+
+  if (successNote) successNote.hidden = true;
+  if (errorNote) errorNote.hidden = true;
+  if (submitBtn) submitBtn.disabled = true;
+
+  const data = new FormData(form);
+  const firstName = String(data.get('name') || '').trim().split(/\s+/)[0];
+  const project = String(data.get('project') || '').trim();
+
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { Accept: 'application/json' },
+    });
+    if (response.ok) {
+      if (successNote) {
+        const greeting = firstName ? `Thank you, ${firstName}` : 'Thank you';
+        const projectClause = project ? ` about your ${project} project` : '';
+        successNote.textContent = `${greeting} — we've received your inquiry${projectClause}. A member of the Straight A Builders team will follow up within one business day.`;
+        successNote.hidden = false;
+      }
+      form.reset();
+    } else {
+      if (errorNote) errorNote.hidden = false;
+    }
+  } catch {
+    if (errorNote) errorNote.hidden = false;
+  } finally {
+    if (submitBtn) submitBtn.disabled = false;
   }
-  form.reset();
   return false;
 }
 window.handleSubmit = handleSubmit;
